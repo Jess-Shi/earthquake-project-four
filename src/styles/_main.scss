@@ -181,9 +181,11 @@ p.time {
 button.swal-button.swal-button--confirm.close-btn {
 	background-color: $accent-colour;
 	padding: 5px 10px;
+    transition: opacity 0.2s;
 
-	&:hover {
-		background-color: $accent-colour;
+	&:hover,
+    &:focus-visible {
+        opacity: 0.85;
 	}
 }
 
